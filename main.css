@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Faculty+Glyphic&family=Oswald:wght@200..700&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html{
+    font-family: 'Saira Condensed', sans-serif;
+    color: #fff;   
+    transition: color 0.3s ease-in-out;  
+
+
+}
+/*.banner {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+    color: #a08976;
+    text-align: center;
+    margin-bottom: 50px;
+    text-decoration: none;  
+    transition: color 0.3s ease-in-out;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    text-decoration-line: underline;
+    cursor: pointer;
+    &:hover {
+        color: #F44336;
+    } 
+
+
+}
+    */  
+h1 {
+    /*font-family: 'Oswald', sans-serif;  */
+    font-size: 50px;
+    color: #a08976;
+    text-align: center;
+    margin-bottom: 50px;
+    text-decoration: none;  
+    transition: color 0.3s ease-in-out;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    text-decoration-line: underline;
+    cursor: pointer;
+    &:hover {
+        color: #F44336;
+    }   
+
+
+}
+body{       
+    font-family: 'Faculty Glyphic', cursive;
+    margin: 0;
+    background-color: #F4F4F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #333;
+}
+main {
+    width: 80%;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+footer{
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    flex-direction: row;
+
+}
