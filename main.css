@@ -1,5 +1,7 @@
+/* Importando fontes */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Faculty+Glyphic&family=Oswald:wght@200..700&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+/* Estilos globais */
 html {
     font-family: 'Saira Condensed', sans-serif;
     color: #fff;
@@ -13,8 +15,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Alterado de height para min-height */
-    background: #333; /* Cor de fundo consistente */
+    min-height: 100vh;
 }
 
 main {
@@ -25,93 +26,119 @@ main {
     align-items: center;
 }
 
-h1 {
-    font-size: 50px;
-    color: #a08976;
-    text-align: center;
-    margin-bottom: 50px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    text-decoration: underline; /* Unificado ao invés de linha separada */
-    cursor: pointer;
-    transition: color 0.3s ease-in-out;
+/* Cabeçalho */
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    padding: 20px;
 }
 
-h1:hover {
-    color: #F44336; /* Ativado para manter consistência */
-}
 #menu1 {
-    display: flex; /* Torna o container flexível */
-    justify-content: center; /* Alinha os itens no centro horizontalmente */
-    align-items: center; /* Centraliza os itens verticalmente */
-    gap: 1.5rem; /* Espaçamento entre os itens */
-    list-style: none; /* Remove os marcadores padrão de listas */
-    margin: 0; /* Remove margens */
-    padding: 0; /* Remove o padding padrão */
-    background-color: #c38df0; /* Cor de fundo opcional para destacar o menu */
-    width: 100%; /* Faz o menu ocupar toda a largura da tela */
-    position: fixed; /* Mantém o menu fixo no topo */
-    top: 0; /* Posiciona no topo */
-    z-index: 1000; /* Garante que o menu fique acima de outros elementos */
-    height: 60px; /* Altura fixa para o menu */
-    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    height: 60px;
 }
 
 #menu1 li a {
-    text-decoration: none; /* Remove o sublinhado dos links */
-    font-size: 18px; /* Tamanho da fonte */
-    color: #fff; /* Cor do texto */
-    padding: 10px 15px; /* Espaçamento interno */
-    border-radius: 5px; /* Bordas arredondadas para um efeito visual */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Animação para hover */
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 #menu1 li a:hover {
-    background-color: #555; /* Cor de fundo ao passar o mouse */
-    color: #f44336; /* Cor do texto ao passar o mouse */
+    background-color: #555;
+    color: #f44336;
 }
-#projetos{
+
+/* Seção de Projetos */
+#projetos {
     margin-top: 70px;
-    flex-wrap: nowrap;
     gap: 20px;
-    align-items: left;
+    align-items: flex-start;
 }
-.fotos{
-    display: flex; /* Ativa o Flexbox */
-    flex-wrap: wrap; /* Permite que as imagens se movam para a linha seguinte quando necessário */
-    justify-content: right; /* Alinha as imagens no centro do contêiner */
-    gap: 55px; /* Espaçamento entre as imagens */
+
+/* Estilo das imagens */
+.fotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
-.fotos > figure > img{
-    width: 100%; /* Faz com que a imagem ocupe a largura do contêiner */
-    max-width: 200px; /* Limita a largura máxima da imagem */
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 8px; /* Adiciona bordas arredondadas */
-    object-fit: cover; /* Faz com que a imagem cubra o espaço disponível sem distorcer */
+
+.fotos > figure > img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
 }
-.footer {
+
+/* Botão de Exploração */
+#botao {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Seção de Ranking */
+#ranking {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#ranking span {
+    font-size: 20px;
+    color: #f44336;
+}
+
+/* Rodapé */
+footer {
     background-color: #333;
     color: #fff;
-    align-items: center;
     display: flex;
-    padding: 20px;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     font-family: 'Oswald', sans-serif;
     font-size: 18px;
-    justify-content: center;
-    flex-wrap: wrap; /* Para lidar melhor com espaços menores */
-    position: fixed; /* Fixa o footer na tela */
-    bottom: 0; /* Coloca na parte inferior */
-    left: 0; /* Alinha à esquerda */
-    width: 100%; /* O footer ocupa toda a largura */
-    background-color: #333; /* Cor de fundo */
-    text-align: center; /* Centraliza o texto */
-    padding: 10px;
-}
-.footer > footer content{
     flex-wrap: wrap;
-    gap: 10px; /* Espaçamento entre os itens */
-    list-style: none; /* Remove os marcadores padrão de listas */
-    margin: 0; /* Remove margens */
-    padding: 0; /* Remove o padding padrão */
-    text-decoration: none
+}
+
+.footer-content {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-content li {
+    padding: 5px;
+}
+
+.footer-content a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    color: #f44336;
 }
