@@ -62,9 +62,49 @@ footer {
     margin-top: 50px;
 }
 
-#menu1 { /* Corrigido de "menu1" para "#menu1" */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+#menu1 {
+    display: flex; /* Torna o container flexível */
+    justify-content: center; /* Alinha os itens no centro horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    gap: 1.5rem; /* Espaçamento entre os itens */
+    list-style: none; /* Remove os marcadores padrão de listas */
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove o padding padrão */
+    background-color: #c38df0; /* Cor de fundo opcional para destacar o menu */
+    width: 100%; /* Faz o menu ocupar toda a largura da tela */
+    position: fixed; /* Mantém o menu fixo no topo */
+    top: 0; /* Posiciona no topo */
+    z-index: 1000; /* Garante que o menu fique acima de outros elementos */
+    height: 60px; /* Altura fixa para o menu */
+    flex-direction: row;
+}
+
+#menu1 li a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-size: 18px; /* Tamanho da fonte */
+    color: #fff; /* Cor do texto */
+    padding: 10px 15px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas para um efeito visual */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Animação para hover */
+}
+
+#menu1 li a:hover {
+    background-color: #555; /* Cor de fundo ao passar o mouse */
+    color: #f44336; /* Cor do texto ao passar o mouse */
+}
+#projetos{
+    margin-top: 50px;
+    flex-wrap: nowrap;
     gap: 20px;
+}
+.fotos{
+    max-width: 45%;
+    column-count: 4;
+    column-gap: 4rem;
+    margin: -1rem;
+}
+
+.fotos figure > img{
+    width: 100%;
+    border-radius: 0.5rem;
 }
