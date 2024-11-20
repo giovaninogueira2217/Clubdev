@@ -230,5 +230,30 @@ footer {
     background-color: #555;
     color: #f44336;
 }
+/*
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 200px; 
+  }
+  
+  .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%; 
+    height: 50px; 
+    flex: 0 1 80%;
+    flex-grow: 1;
+    flex-basis: 50px;
+  }
+  
+  .banner img {
+    width: 50%; 
+    height: auto; 
+    object-fit: cover; 
+  }
+  */
 
 
