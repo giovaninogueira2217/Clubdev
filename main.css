@@ -1,7 +1,6 @@
 /* Importando fontes */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Faculty+Glyphic&family=Oswald:wght@200..700&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-/* Estilos globais */
 html {
     font-family: 'Saira Condensed', sans-serif;
     color: #fff;
@@ -36,19 +35,25 @@ header nav {
 
 #menu1 {
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
     gap: 1.5rem;
     list-style: none;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     background-color: #c38df0;
-    width: 100%;
+    width: 100%; 
     position: fixed;
     top: 0;
+    left: 0; 
     z-index: 1000;
     height: 60px;
     flex-direction: row;
+    box-sizing: border-box; 
+}
+
+#menu1 li {
+    display: inline-block; 
 }
 
 #menu1 li a {
