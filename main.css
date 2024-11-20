@@ -43,7 +43,7 @@ header nav {
     padding: 0;
     background-color: #c38df0;
     width: 100%; 
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0; 
     z-index: 1000;
