@@ -146,3 +146,9 @@ footer {
 .footer-content a:hover {
     color: #f44336;
 }
+#footer-txt {	
+    display: flex;
+    margin-bottom: -20px;
+    position: fixed;
+    margin-top: 20px;
+}
