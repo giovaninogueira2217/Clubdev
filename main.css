@@ -26,7 +26,6 @@ main {
     align-items: center;
 }
 
-/* Cabeçalho */
 header nav {
     display: flex;
     justify-content: center;
@@ -66,14 +65,13 @@ header nav {
     color: #f44336;
 }
 
-/* Seção de Projetos */
+
 #projetos {
     margin-top: 70px;
     gap: 20px;
     align-items: flex-start;
 }
 
-/* Estilo das imagens */
 .fotos {
     display: flex;
     flex-wrap: wrap;
@@ -106,7 +104,6 @@ header nav {
     color: #f44336;
 }
 
-/* Rodapé */
 footer {
     background-color: #333;
     color: #fff;
