@@ -41,13 +41,15 @@ header nav {
     align-items: center;
     gap: 1.5rem;
     list-style: none;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
+    background-color: #c38df0;
     width: 100%;
     position: fixed;
     top: 0;
     z-index: 1000;
     height: 60px;
+    flex-direction: row;
 }
 
 #menu1 li a {
