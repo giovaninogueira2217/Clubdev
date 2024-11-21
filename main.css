@@ -35,7 +35,7 @@ header nav {
 
 #menu1 {
     display: flex;
-    justify-content: space-between; 
+    justify-content:space-between;
     align-items: center;
     gap: 1.5rem;
     list-style: none;
@@ -50,11 +50,20 @@ header nav {
     height: 60px;
     flex-direction: row;
     box-sizing: border-box; 
+    background: linear-gradient(45deg, #c38df0, #6a8dc3);
+    background-size: 400% 400%;
+    animation: gradientBG 5s ease infinite;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    
 }
 
 #menu1 li {
     position: relative; /* Necessário para o submenu */
     display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    transform: scale(1.2);
 }
 
 #menu1 li a {
@@ -143,14 +152,28 @@ header nav {
 
 
 #projetos-alinhamento {
-    margin-top: 70px;
-    gap: 20px;
     display: flex;
-    justify-content: center;
+    width: 100vw; 
+    height: 100vh; 
     background-color: #555;
+    gap: 0px; 
+    justify-content: center; 
+    align-items: flex-start; 
+    margin: 0; 
+    padding: 50px; 
+    margin-top: 10px;
+    box-sizing: border-box; 
+}
+#division{
+    display: flex;
+    border-bottom: #d50b0b;
+    border-width: 2px;
+    border-top-left-radius: 10px;
 }
 
 .fotos {
+    padding-top: 30px;
+    padding-left: 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -326,5 +349,17 @@ h1{
     color: #d29ee0;
     font-size: 25px; 
     align-items: center;
+}
+#Projetos-recentes{
+    display: flex;
+    width: 100vw; /* Largura total da tela */
+    height: 100vh; /* Altura total da tela */
+    gap: 20px;
+    justify-content: center; /* Alinha os itens à esquerda */
+    align-items: flex-start; /* Alinha itens ao topo (pode ajustar conforme necessidade) */
+    background-color: #333; /* Cor de fundo */
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove preenchimento */
+    box-sizing: border-box; /* Garante que padding/margins não aumentem o tamanho */
 }
 
