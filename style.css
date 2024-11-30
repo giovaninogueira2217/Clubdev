@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Faculty+Glyphic&family=Oswald:wght@200..700&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Estilização global */
+html {
+    font-family: 'Saira Condensed', sans-serif;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Faculty Glyphic', cursive;
+    margin: 0;
+    background-color: #333;
+    padding: 0;
+}
+
+/* Container principal */
+
+.container {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background-color: #564030;
+    padding: 10px 20px;
+    height: 30px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 15px; /* Espaço entre os itens */
+}
+
+.menu li {
+    position: relative;
+    list-style: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu li a:hover {
+    background-color: #555;
+    color: #c38df0;
+}
+
+.submenucomunidade {
+    display: none;
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    background-color: #564030;
+    padding: 10px 0;
+    list-style: none;
+    border-radius: 5px;
+    z-index: 1000;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.menu li:hover .submenucomunidade {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.submenucomunidade li a {
+    padding: 10px 15px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.submenucomunidade li a:hover {
+    background-color: #555;
+    color: #c38df0;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 40px; 
+    margin-top: -30px;
+    
+}
+
+.icone-perfil img {
+    width: 60px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.icone-perfil img:hover {
+    transform: scale(1.1);
+}
+
+#floating-menu {
+    display: none; /* Oculto por padrão */
+    position: absolute;
+    top: calc(100% + 5px);
+    right: 0;
+    background-color: #564030;
+    padding: 10px 0;
+    list-style: none;
+    border-radius: 5px;
+    width: 200px;
+    z-index: 999;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#floating-menu.show {
+    display: block; /* Exibido quando a classe "show" é aplicada */
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.perfil-opcoes li a {
+    color: #fff;
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+}
+
+.perfil-opcoes li a:hover {
+    background-color: #555;
+    color: #c38df0;
+}
+
+
+/* Ranking */
+#ranking {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#ranking span {
+    font-size: 20px;
+    color: #f44336;
+}
+
+/* Seção de Projetos */
+#Projetos-recentes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    background-color: #333;
+}
+
+.fotos figure {
+    width: 100%;
+    max-width: 300px;
+    margin: 0;
+}
+
+.fotos img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.fotos img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-content a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-content a:hover {
+    color: #f44336;
+}

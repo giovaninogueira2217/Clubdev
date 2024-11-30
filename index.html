@@ -11,30 +11,31 @@
 </head>
 
 <body>
-    <header>
-     <div class="container">
-        <nav class ="menu">
-            <ul>
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#Projects">Projects</a></li>
-                <li><a href="#Ranking">Ranking</a></li>
+    <header class="container">
+        <nav>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#ranking">Ranking</a></li>
                 <li>
-                    <a href="#Community">Community</a>
-                    <ul class="SubmenuComunidade">
-                        <li><a href="#Events">Events</a></li>
+                    <a href="#community">Community</a>
+                    <ul class="submenucomunidade">
+                        <li><a href="#events">Events</a></li>
                     </ul>
                 </li>
             </ul>
-            <div class="Perfil">
-                <a class ="icone-perfil" href="javascript:void(0)">
+            <div class="perfil">
+                <a class="icone-perfil" href="javascript:void(0)" onclick="toggleMenu()">
                     <img src="assets/painel.png" alt="Ícone de perfil">
                 </a>
-                <ul class="perfil-opcoes">
-                    <li><a href="#login">Login</a></li>
-                    <li><a href="#cadastrar">Cadastrar</a></li>
-                    <li><a href="#perfil">Perfil</a></li>
-                    <li><a href="#meus-projetos">Meus Projetos</a></li>
-                </ul>
+                <div id="floating-menu" class="perfil-opcoes">
+                    <ul>
+                        <li><a href="#login">Login</a></li>
+                        <li><a href="#cadastrar">Cadastrar</a></li>
+                        <li><a href="#perfil">Perfil</a></li>
+                        <li><a href="#meus-projetos">Meus Projetos</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
@@ -61,10 +62,10 @@
             </div>
         </section>
 
-        <section id="Projetos-recentes">
-            <div id="Projetos-fotos" class="Projetos-fotos"></div>
-            <div id="Projetos-descrition"></div>
-            <button><img src="" alt="Explorar Projetos"></button>
+        <section id= "projetos-recentes">
+            <div id="projetos-fotos" class="Projetos-fotos"></div>
+            <div id="p"></div>
+            <button><img src="" alt="explorar Projetos"></button>
             <h2>Explorar Projetos</h2>
             <p>Veja nossos projetos mais recentes e populares.</p>
         </section>
