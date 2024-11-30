@@ -195,17 +195,15 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Efeito de hover */
 .fotos figure:hover {
-    transform: scale(1.05); /* Aumenta a imagem quando o mouse passa sobre */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Sombra ao redor da imagem */
+    transform: scale(1.05); 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); 
 }
 
 .fotos figure:hover img {
     transform: scale(1.1); /* Aumenta a imagem ainda mais */
 }
 
-/* Adicionando um contorno com borda rasgada ao passar o mouse */
 .fotos figure::after {
     content: '';
     position: absolute;
