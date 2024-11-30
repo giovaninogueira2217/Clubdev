@@ -98,6 +98,7 @@ body {
     margin-right: 40px; 
     margin-top: -30px;
     
+    
 }
 
 .icone-perfil img {
@@ -110,6 +111,7 @@ body {
 
 .icone-perfil img:hover {
     transform: scale(1.1);
+    
 }
 
 #floating-menu {
@@ -125,6 +127,9 @@ body {
     z-index: 999;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: opacity 0.3s ease, transform 0.3s ease;
+    margin-right: 30px;
+    justify-content: flex-start;
+    
 }
 
 #floating-menu.show {
@@ -165,8 +170,41 @@ body {
     text-align: left; 
 }
 
-.h2projeto {
-    color: #c38df0;
+#h1title{
+    align-items: center;
+    color: #afdd58;
+    text-align: center;
+    transition: color 0.3s ease;
+
+}
+.division{
+    max-height: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+
+}
+#h1title:hover{
+    color: #fff;
+
+}
+#h2descripion {
+    background-color: #555;
+    color: #ffffff;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+    height: 500px;
+    max-height: 100%;
+    border-radius: 2%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+#h2descripion:hover {
+    color: #c38df0
+    
 }
 
 .fotos {
