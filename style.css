@@ -143,22 +143,99 @@ body {
 .perfil-opcoes li a:hover {
     background-color: #555;
     color: #c38df0;
+
+}
+.projetos-alinhamento {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 100%;
+    background-color: #604e41;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff; 
+    box-sizing: border-box;
+    gap: 20px;
+}
+.texto {
+    max-width: 50%; 
+    text-align: left; 
 }
 
+.h2projeto {
+    color: #c38df0;
+}
 
-/* Ranking */
-#ranking {
+.fotos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    /*  border-left: 3px solid #73645a; Borda vertical entre o texto e as fotos */
+    /*padding-left: 20px;  Distância da borda para as fotos */
+}
+
+.fotos figure {
+    margin: 0;
+    width: calc(33% - 10px);
+    position: relative;
+    overflow: hidden; /* Garante que a borda rasgada não ultrapasse o container */
+    border-radius: 5px; /* Borda suave nas imagens */
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%); /* Borda irregular */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-right: 20px;
+
+}
+
+.fotos img {
+    width: 100%;
+    height: auto;
+    display: block; /* Garante que a imagem ocupe todo o espaço */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito de hover */
+.fotos figure:hover {
+    transform: scale(1.05); /* Aumenta a imagem quando o mouse passa sobre */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Sombra ao redor da imagem */
+}
+
+.fotos figure:hover img {
+    transform: scale(1.1); /* Aumenta a imagem ainda mais */
+}
+
+/* Adicionando um contorno com borda rasgada ao passar o mouse */
+.fotos figure::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid transparent;
+    background-image: url('https://www.transparenttextures.com/patterns/black-tie.png'); /* Imagem de textura para a borda */
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.fotos figure:hover::after {
+    opacity: 1; /* Torna a borda visível quando o mouse passa sobre */
+}
+
+.ranking {
     margin-top: 50px;
     text-align: center;
 }
 
-#ranking span {
+.ranking span {
     font-size: 20px;
     color: #f44336;
 }
 
-/* Seção de Projetos */
-#Projetos-recentes {
+.projetos-recentes {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -168,25 +245,7 @@ body {
     background-color: #333;
 }
 
-.fotos figure {
-    width: 100%;
-    max-width: 300px;
-    margin: 0;
-}
-
-.fotos img {
-    width: 100%;
-    border-radius: 8px;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.fotos img:hover {
-    transform: scale(1.05);
-}
-
-/* Footer */
-footer {
+.footer {
     background-color: #333;
     color: #fff;
     display: flex;
