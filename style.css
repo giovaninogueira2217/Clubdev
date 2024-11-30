@@ -21,7 +21,7 @@ body {
 .container {
     width: 100%;
     position: fixed;
-    top: 0;
+    top: 0px;
     z-index: 999;
     background-color: #564030;
     padding: 10px 20px;
@@ -30,12 +30,14 @@ body {
 
 .menu {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     margin: 0;
     padding: 0;
     list-style: none;
-    gap: 15px; /* Espaço entre os itens */
+    gap: 15px; 
+    padding-top: 2.5px;
+    padding-left: 100px;
 }
 
 .menu li {
@@ -97,12 +99,13 @@ body {
     justify-content: end;
     margin-right: 40px; 
     margin-top: -30px;
+    padding-right: 100px;
     
     
 }
 
 .icone-perfil img {
-    width: 60px;
+    width: 40px;
     height: 40px;
     border-radius: 50%;
     cursor: pointer;
@@ -110,6 +113,7 @@ body {
 }
 
 .icone-perfil img:hover {
+    background-color: #c38df0;
     transform: scale(1.1);
     
 }
@@ -310,5 +314,5 @@ body {
 }
 
 .footer-content a:hover {
-    color: #f44336;
+    color: #36f45c;
 }
