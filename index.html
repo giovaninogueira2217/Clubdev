@@ -1,102 +1,163 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+    <!DOCTYPE html>
+    <html lang="pt-BR">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore projetos de devs juniores iniciantes!">
-    <title>Club &lt;/Dev&gt;</title>
-    <script src="index.js" defer></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="assets/favicon.png" type="image/png">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Explore projetos de devs juniores iniciantes!">
+        <title>Club &lt;/Dev&gt;</title>
+        <script src="index.js" defer></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="assets/favicon.png" type="image/png">
+    </head>
 
-<body>
-    <header class="container">
-        <nav>
-            <ul class="menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#ranking">Ranking</a></li>
-                <li>
-                    <a href="#community">Community</a>
-                    <ul class="submenucomunidade">
-                        <li><a href="#events">Events</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <div class= "perfil">
-                <a class="icone-perfil" href="javascript:void(0)" onclick="toggleMenu()">
-                    <span class="menu-icon"></span>
-                    <img src="assets/painel.png" alt="Ícone de perfil">
-                </a>
-                <div id="floating-menu" class="perfil-opcoes">
-                    <ul>
-                        <li><a href="#login">Login</a></li>
-                        <li><a href="#cadastrar">Cadastrar</a></li>
-                        <li><a href="#perfil">Perfil</a></li>
-                        <li><a href="#meus-projetos">Meus Projetos</a></li>
-                    </ul>
+    <body>
+        <header class="container">
+            <nav>
+                <ul class="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#ranking">Ranking</a></li>
+                    <li>
+                        <a href="#community">Community</a>
+                        <ul class="submenucomunidade">
+                            <li><a href="#events">Events</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class= "perfil">
+                    <a class="icone-perfil" href="javascript:void(0)" onclick="toggleMenu()">
+                        <span class="menu-icon"></span>
+                        <img src="assets/painel.png" alt="Ícone de perfil">
+                    </a>
+                    <div id="floating-menu" class="perfil-opcoes">
+                        <ul>
+                            <li><a href="#login">Login</a></li>
+                            <li><a href="#cadastrar">Cadastrar</a></li>
+                            <li><a href="#perfil">Perfil</a></li>
+                            <li><a href="#meus-projetos">Meus Projetos</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </header>
+            </nav>
+        </header>
 
-    <main>
-        <section class= "projetos-alinhamento">
-        <div class="texto">
-                <h1 id="h1title"></h1>
-                <hr class="division" class="division" />
-                <h2 id="h2descripion"></h2>
-            </div>
+        <main>
+            <section class= "projetos-alinhamento">
+            <div class="texto">
+                    <h1 id="h1title"></h1>
+                    <hr class="division" class="division" />
+                    <h2 id="h2descripion"></h2>
+                </div>
 
-            <div class="fotos" class="fotos">
-                        <figure><img src="assets/imagem_1.png" alt="Projeto 1"></figure>
-                        <figure><img src="assets/imagem_2.png" alt="Projeto 2"></figure>
-                        <figure><img src="assets/imagem_3.png" alt="Projeto 3"></figure>
-                        <figure><img src="assets/imagem_4.png" alt="Projeto 4"></figure>
-                        <figure><img src="assets/imagem_5.png" alt="Projeto 5"></figure>
-                        <figure><img src="assets/imagem_6.png" alt="Projeto 6"></figure>
-                        <figure><img src="assets/imagem_7.png" alt="Projeto 7"></figure>
-                        <figure><img src="assets/imagem_8.png" alt="Projeto 8">
-                        </figure>
-                        <figure><img src="assets/imagem_9.png" alt="Projeto 8">
-                        </figure>
-            </div>
-        </section>
+                <div class="fotos" class="fotos">
+                            <figure><img src="assets/imagem_1.png" alt="Projeto 1"></figure>
+                            <figure><img src="assets/imagem_2.png" alt="Projeto 2"></figure>
+                            <figure><img src="assets/imagem_3.png" alt="Projeto 3"></figure>
+                            <figure><img src="assets/imagem_4.png" alt="Projeto 4"></figure>
+                            <figure><img src="assets/imagem_5.png" alt="Projeto 5"></figure>
+                            <figure><img src="assets/imagem_6.png" alt="Projeto 6"></figure>
+                            <figure><img src="assets/imagem_7.png" alt="Projeto 7"></figure>
+                            <figure><img src="assets/imagem_8.png" alt="Projeto 8">
+                            </figure>
+                            <figure><img src="assets/imagem_9.png" alt="Projeto 9">
+                            </figure>
+                </div>
+            </section>
+        </main>
+        <main id="alinhar-main">
+            <h2 class="projetoserank-title" > MELHORES PROJETOS</h2>
+                <section class="recentes-now">
+                <div class="projeto">
+                    <img src="/assets/project/project_1.png" alt="Projeto 1" class="projeto-imagem">
+                    <div class="projeto-info">
+                        <h3>Projeto Herculis</h3>
+                        <p>Um novo framework front-end para iniciantes</p>
+                        <a href="#">Saiba mais</a>
+                    </div>
+                    <div></div><img src="/assets/User/giovani.png" alt="Usuário" class="usuario-imagem">
+                </div></div>
+            
+                <div class="projeto">
+                    <img src="/assets/project/project_2.png" alt="Projeto 2" class="projeto-imagem">
+                    <div class="projeto-info">
+                        <h3>Projeto Odin</h3>
+                        <p>Um novo framework front-end para iniciantes</p>
+                        <a href="#">Saiba mais</a>
+                    </div>
+                    <img src="/assets/User/giovani.png" alt="Usuário" class="usuario-imagem">
+                </div>
+            
+                <div class="projeto">
+                    <img src="assets/project/project_3.png" alt="Projeto 3" class="projeto-imagem">
+                    <div class="projeto-info">
+                        <h3>Projeto Vulcan</h3>
+                        <p>Um novo framework front-end para iniciantes</p>
+                        <a href="#">Saiba mais</a>
+                    </div>
+                    <img src="/assets/User/giovani.png" alt="Usuário" class="usuario-imagem">
+                </div>
+            
+                <div class="projeto">
+                    <img src="assets/project/project_4.png" alt="Projeto 4" class="projeto-imagem">
+                    <div class="projeto-info">
+                        <h3>Projeto Terra</h3>
+                        <p>Um novo framework front-end para iniciantes</p>
+                        <a href="#">Saiba mais</a>
+                    </div>
+                    <img src="/assets/User/giovani.png" alt="Usuário" class="usuario-imagem">
+                </div>
 
-        <section class= "projetos-recentes">
-            <div class="projetos-fotos"></div>
-            <div class="p"></div>
-            <button><img src="" alt="explorar Projetos"></button>
-            <h2>Explorar Projetos</h2>
-            <p>Veja nossos projetos mais recentes e populares.</p>
-        </section>
+                <div class="projeto">
+                    <img src="assets/project/project_5.png" alt="Projeto 5" class="projeto-imagem">
+                    <div class="projeto-info">
+                        <h3>Projeto Terra</h3>
+                        <p>Um novo framework front-end para iniciantes</p>
+                        <a href="#">Saiba mais</a>
+                    </div>
+                    <img src="/assets/User/giovani.png" alt="Usuário" class="usuario-imagem">
+                </div>
 
-        <section class="ranking">
-            <header>
-                <span>Ranking</span>
-                <h3>Melhores da semana</h3>
-                <p>Confira os melhores devs da semana!</p>
-            </header>
-            <div>
-                <span>Em alta</span>
-                <h4>Projeto Herculis</h4>
-            </div>
-        </section>
-    </main>
+                <div class="projeto">
+                    <img src="assets/project/project_6.png" alt="Projeto 6" class="projeto-imagem">
+                    <div class="projeto-info">
+                        <h3>Projeto Terra</h3>
+                        <p>Um novo framework front-end para iniciantes</p>
+                        <a href="#">Saiba mais</a>
+                    </div>
+                    <img src="/assets/User/giovani.png" alt="Usuário" class="usuario-imagem">
+                    <button class="botaoprojetos"><img src="" alt="Explorar Projetos"></button>
+                </div>
+            </section>
+            <h2 class="projetoserank-title " > RANKING </h2>
+            <section class="recentes-now">
 
-    <!-- Rodapé -->
-    <footer>
-        <nav>
-            <ul class="footer-content" class="footer-content">
-                <li><a href="#sobre">Sobre Nós</a></li>
-                <li><a href="#ajuda">Ajuda</a></li>
-                <li><a href="#novidades">Novidades</a></li>
-            </ul>
-        </nav>
-        <p class="footer-txt">Todos os direitos reservados &copy; 2021 Club &lt;/Dev&gt;.</p>
-    </footer>
-</body>
+                <div class="r-ranking">
+                        <div class="r-pts">
+                            <h3>Projeto Odin</h3>
+                            <img src="/assets/User/giovani.png" alt="Usuário" class="usuario-imagem">
+                        </div>
+                    </div>
+                    <div class="r-ranking">
+                        <div class="r-pts">
+                            <h3>Projeto Odin</h3>
+                            <img src="/assets/User/giovani.png" alt="Usuário" class="usuario-imagem">
+                        </div>
+                    </div>
+                </section>
 
-</html>
+        </main>
+
+        <footer>
+            <nav class="footer-content">
+                <ul class="footer-menu">
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#ajuda">Ajuda</a></li>
+                    <li><a href="#novidades">Novidades</a></li>
+                </ul>
+                <div class="footer-txt"> Todos os direitos reservados &copy; 2024 Club &lt;/Dev&gt;</div>
+            </nav>
+        </footer>
+    </body>
+
+    </html>
